@@ -38,19 +38,20 @@ export default function ProductDetail() {
   return (
     <>
       <div className="relative shrink-0">
-        <Cover product={product} big className="h-64 w-full" />
+        <Cover product={product} big hero className="aspect-[5/4] w-full" />
         <button onClick={() => navigate(-1)} aria-label="Kembali"
           className="absolute left-4 top-5 rounded-full bg-black/20 p-1.5 text-white">
           <BackIcon />
         </button>
-        <div className="absolute inset-x-0 bottom-6 flex justify-center gap-1.5">
+        <div className="absolute inset-x-0 bottom-10 flex justify-center gap-1.5">
           <span className="h-1.5 w-6 rounded-full bg-white" />
           <span className="h-1.5 w-1.5 rounded-full bg-white/60" />
           <span className="h-1.5 w-1.5 rounded-full bg-white/60" />
         </div>
       </div>
 
-      <main className="-mt-4 flex-1 overflow-y-auto rounded-t-3xl bg-white px-5 pb-4 pt-5">
+      {/* relative z-10: supaya sudut melengkung menumpuk di atas foto (seperti Figma) */}
+      <main className="relative z-10 -mt-7 flex-1 overflow-y-auto rounded-t-[28px] bg-white px-5 pb-4 pt-6">
         <div className="flex items-start justify-between">
           <div>
             <h1 className="text-lg font-bold">{product.name}</h1>
