@@ -53,7 +53,7 @@ export function PageWithHeader({ title, step, onBack, children, footer, headerEx
         </div>
         {headerExtra}
       </header>
-      <main className="-mt-4 flex-1 overflow-y-auto rounded-t-3xl bg-white px-5 pb-4 pt-5">{children}</main>
+      <main className="-mt-4 flex-1 overflow-y-auto rounded-t-3xl bg-white px-5 pb-4 pt-5 hide-scrollbar">{children}</main>
       {footer && <footer className="shrink-0 bg-white px-5 pb-5 pt-2">{footer}</footer>}
     </>
   )

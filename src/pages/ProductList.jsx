@@ -68,7 +68,7 @@ export default function ProductList() {
         </div>
       </header>
 
-      <main className="-mt-4 flex-1 overflow-y-auto rounded-t-3xl bg-white p-4">
+      <main className="-mt-4 flex-1 overflow-y-auto rounded-t-3xl bg-white p-4 hide-scrollbar">
         {filtered.length === 0 ? (
           <div className="py-16 text-center">
             <p className="text-sm text-slate-400">Produk tidak ditemukan.</p>

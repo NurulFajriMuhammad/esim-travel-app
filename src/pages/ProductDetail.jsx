@@ -51,7 +51,7 @@ export default function ProductDetail() {
       </div>
 
       {/* relative z-10: supaya sudut melengkung menumpuk di atas foto (seperti Figma) */}
-      <main className="relative z-10 -mt-7 flex-1 overflow-y-auto rounded-t-[28px] bg-white px-5 pb-4 pt-6">
+      <main className="relative z-10 -mt-7 flex-1 overflow-y-auto rounded-t-[28px] bg-white px-5 pb-4 pt-6 hide-scrollbar">
         <div className="flex items-start justify-between">
           <div>
             <h1 className="text-lg font-bold">{product.name}</h1>

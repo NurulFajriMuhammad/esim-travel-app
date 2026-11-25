@@ -71,7 +71,7 @@ export default function Invoice() {
           <Row k="Nomor Whatsapp" v={maskPhone(customer.phone)} />
           <Row k="Email" v={maskEmail(customer.email)} />
         </dl>
-        <p className="my-3 text-center text-[11px] text-slate-500">
+        <p className="my-3 text-center text-[12px] text-slate-500">
           Kami akan segera mengirimkan kode QR eSIM ke email Anda. Cek inbox (atau folder spam) ya!
         </p>
 
